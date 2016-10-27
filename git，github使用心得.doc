@@ -1,0 +1,27 @@
+使用git心得：
+
+Git就我个人而言，有两种应用：第一：仅仅在本地建立数据库即可；第二：与github进行交互通信的应用。
+
+第一：仅在本地建立数据库：
+1. 在win环境下，安装mygit软件(http://msysgit.github.io)。
+2. 打开软件git bash，在合适的目录下（我使用的是默认目录：c/user/adminster），新建一个文件夹gitclear:
+3. 在其下：git config –global user.name “limanjihe”
+			Git config –global user.email rixinshi@foxmail.com
+4. Git init   创建仓库生成 .git文件夹
+5. 然后，就可以建立文件了，然后 提交等等。
+
+
+第二：与github进行交互通信应用：
+1. 在本地创建ssh key : $ ssh-keygen -t rsa -C rixinshi@foxmail.com
+　之后会要求确认路径和输入密码，我们这使用默认的一路回车就行。成功的话会在~/下生成.ssh文件夹，进去，打开id_rsa.pub，复制里面的key。
+回到github上，进入 Account Settings（账户配置），左边选择SSH Keys， Add SSH Key, title随便填（如：github），粘贴在你电脑上生成的key。
+
+	2.进入github需要下载的页面。点击如图之处。复制链接。
+
+
+	$ git clone git@github.com:limanjihe/helloworld.git
+	Ok!
+	
+
+
+
